@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+@eaDir
+
+__pycache__/
+answers/
+week*/*.out
+build/
