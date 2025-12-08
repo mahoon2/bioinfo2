@@ -22,7 +22,7 @@ def main():
         prob[i] = line
 
     state_to_idx = {s: i for i, s in enumerate(states)}
-    ret = np.prod([prob[state_to_idx[i]][state_to_idx[j]] for i, j in zip(path, path[1:])]) / 2
+    ret = np.prod([prob[state_to_idx[i]][state_to_idx[j]] for i, j in zip(path, path[1:])]) / n
     outfile.write(f'{ret}\n')
 
     infile.close()
